@@ -1499,11 +1499,8 @@ a.more-link:focus {
 /* Footer */
 .entry-footer-wrapper {
     position: relative;
-
     clear: both;
-
     padding: 1.5em;
-
     color: white;
     border-bottom: 1px solid #252525;
     background: #111;
@@ -1512,24 +1509,17 @@ a.more-link:focus {
 .site-info {
     font-size: .778em;
     font-weight: bold;
-
     position: relative;
-
     clear: both;
-
     margin: 1.5em auto;
     padding: 1.5em;
-
     text-align: center;
-    text-transform: uppercase;
 }
 .site-info .sep {
     line-height: 1;
-
     display: block;
     visibility: hidden;
     clear: both;
-
     width: 100%;
     height: 0;
 }
@@ -1538,7 +1528,7 @@ a.more-link:focus {
     position: relative;
     clear: both;
     color: #aaa;
-    background: #111;
+    background: url("images/bg-footer.jpg") no-repeat center top scroll #111;
 }
 
 .site-footer a {
@@ -1548,9 +1538,7 @@ a.more-link:focus {
 /* Single Posts */
 .single .edit-link {
     float: right;
-
     width: auto;
-
     text-align: right;
 }
 
@@ -1559,7 +1547,6 @@ a.more-link:focus {
 .search-no-results .site-header {
     margin: 0;
     padding: .75em 1.5em;
-
     background-color: #222;
 }
 
@@ -1960,6 +1947,34 @@ object {
     display: block;
 }
 
+/*--------------------------------------------------------------
+13. Coisas novas só do Vero Cubo
+-------------------------------------------------------------- */
+
+.site-info {
+	width: 850px;
+}
+
+.site-logos {
+	background: transparent url("images/logos-apoio-realizacao.png") no-repeat scroll center top / 68% auto;
+	min-height: 165px;
+	margin-top: 20px;
+    
+}
+
+.esquerda {
+	width: 46%;
+	float: left;
+	text-align: left;
+	margin-bottom: 30px;
+	}
+
+.direita {
+	width: 46%;
+	float: right;
+	text-align: right;
+	}
+
 /* Add alignment for wider devices */
 @media screen and (min-width: 480px) {
     .alignleft {
@@ -1985,7 +2000,6 @@ object {
     .single.single-thumbnail .site-main,
     .single.single-thumbnail .content-area {
         position: relative;
-
         height: 100%;
     }
 
@@ -1995,7 +2009,6 @@ object {
     .entry-title,
     .entry-footer,
     .comments-area,
-    .site-info,
     .entry-author,
     .entry-meta,
     .page-title,
@@ -2193,6 +2206,31 @@ object {
         font-size: 1.333em;
     }
 }
+@media screen and (max-width: 768px) {
+	.has-custom-header .site-branding {
+	    min-height: 150px;
+	}
+
+	.site-info {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 1.5em;
+	}
+
+	.site-logos {
+		min-height: 85px;
+		background-size: 85%;
+	}
+
+	.esquerda, .direita {
+		width: 90%;
+		margin: 3%;
+		float: left;
+		text-align: left;
+	}
+
+}
+
 /* Large screens */
 @media screen and (min-width: 1060px) {
     /* Pull content into margins */
